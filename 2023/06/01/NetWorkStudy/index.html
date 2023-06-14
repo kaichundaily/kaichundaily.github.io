@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN" color-mode="light">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <meta name="author" content="kaichun" />
+  <meta name="description" content="" />
+  
+  
+  <title>
+    
+      NetWorkStudy 
+      
+      
+      |
+    
+     kaichun`s Blog
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
+  <!-- 代码块风格 -->
+  
+
+  <!-- jquery3.3.1 -->
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
+
+  <!-- fancybox -->
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">Oranges</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">记录</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">NetWorkStudy</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2023-06-14 17:59:26
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 主机伺服</span></span><br><span class="line">system-view</span><br><span class="line"><span class="comment">##选着物理网口</span></span><br><span class="line">int g 网口编号</span><br><span class="line"><span class="comment">## 给网口配置ip</span></span><br><span class="line">ip address ip地址 子网掩码</span><br><span class="line"><span class="comment">## 退出前一定保存配置</span></span><br><span class="line">quit</span><br><span class="line">save</span><br><span class="line"><span class="comment">## 路由器开启DHCP</span></span><br><span class="line">dhcp <span class="built_in">enable</span></span><br><span class="line"><span class="comment">## 给DHCP配置dns,选择物理网口或者vlan</span></span><br><span class="line">dhcp <span class="keyword">select</span> interface</span><br><span class="line">dhcp server dns-list dns服务器地址</span><br><span class="line">+ 网关：用来连接不同网段的机器</span><br><span class="line"><span class="comment">## 添加路由表，注意：有去有回才能通</span></span><br><span class="line">ip route 跳转目标域 子网掩码 跳转网关ip</span><br><span class="line"><span class="comment">## 物理网口模式</span></span><br><span class="line">+ Access：用来连接终端的</span><br><span class="line">+ Trunk：用来连接其他交换机的</span><br><span class="line"><span class="comment">## 创建vlan</span></span><br><span class="line">vlan vlan-id</span><br><span class="line"><span class="comment">## 查看创建vlan</span></span><br><span class="line">display vlan</span><br><span class="line"><span class="comment">## 将网口添加到vlan</span></span><br><span class="line">+ 先选着网口模式</span><br><span class="line">port link-type 模式</span><br><span class="line">+ 添加网口进vlan</span><br><span class="line">port default vlan vlan-id</span><br><span class="line">+ trunk模式下允许通过的vlan</span><br><span class="line">port trunk allow-pass vlan vlan-id/all</span><br><span class="line"><span class="comment">## 创建acl规则</span></span><br><span class="line">acl acl-id</span><br><span class="line">rule permit <span class="built_in">source</span> ip 掩码   //允许通过的规则</span><br><span class="line">rule deny <span class="built_in">source</span> ip 掩码 // 不允许通过</span><br><span class="line">rule permit <span class="built_in">source</span> any //任何都可以通过（优先级低）</span><br><span class="line"><span class="comment">## nat地址转换</span></span><br><span class="line">+ 通过acl规则设置哪些地址要转换</span><br><span class="line">+ 设置转换的外网地址范围规则</span><br><span class="line">nat address-group nat-id 起始地址 结束地址</span><br><span class="line">+ 进入出口网关网口设置转换</span><br><span class="line">nat outbroud acl-id address-group nat-id</span><br><span class="line"><span class="comment">## 固定nat地址</span></span><br><span class="line">int g 外出网口</span><br><span class="line">nat server global 固定地址 inside 内网地址</span><br><span class="line"></span><br><span class="line"><span class="comment">## 远程管理设备telenet</span></span><br><span class="line">+ 创建远程连接用户数量</span><br><span class="line">user-interface vty x y</span><br><span class="line">+ 设置远程连接模式 aaa:user passworld    password:单密码</span><br><span class="line">authentication-mode aaa</span><br><span class="line">+ 创建用户密码  cipher:密码加密</span><br><span class="line">local-user testuser password cipher 123456</span><br><span class="line">+ 给用户权限 1-15数字越大权限越高</span><br><span class="line">local-user testuser privilege level 15</span><br></pre></td></tr></table></figure>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2023-06-14 17:59:26
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2023/06/02/hello-world/" target="_self">
+                <span>下一页</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        
+<div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © 2023 Oranges</a>
+        
+    </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + NetWorkStudy + '&url=' + https%3A%2F%2Fkaichundaily.github.io%2F2023%2F06%2F01%2FNetWorkStudy%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://kaichundaily.github.io/2023/06/01/NetWorkStudy/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
+  
+  
+<script src="/js/shares.js"></script>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
